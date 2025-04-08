@@ -24,7 +24,7 @@ public class SQLConnector {
     public static int user_id;
     private static final String URL = "jdbc:mysql://localhost:3306/userdata";
     private static final String USER = "root";
-    private static final String PASSWORD = "1532789460h";
+    private static final String PASSWORD = "your password";
     public static List<String> books = new ArrayList<>();
     public static int limit = 3;
 
