@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.bookquery">
+   <children>
+      <ToolBar prefHeight="40.0" prefWidth="200.0">
+        <items>
+          <Button fx:id="back_id" mnemonicParsing="false" onAction="#On_back" prefHeight="26.0" prefWidth="91.0" text="Back" />
+            <CheckBox fx:id="mode_precise" mnemonicParsing="false" onAction="#On_precisemode" prefHeight="18.0" prefWidth="121.0" selected="true" text="Precise Search" />
+            <CheckBox fx:id="mode_scope" mnemonicParsing="false" onAction="#On_scopemode" prefHeight="18.0" prefWidth="127.0" text="Scope Search" />
+        </items>
+      </ToolBar>
+      <HBox alignment="CENTER" prefHeight="73.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="search_filed" prefHeight="26.0" prefWidth="298.0" promptText="Bookname or Bookanthor">
+               <effect>
+                  <Blend />
+               </effect></TextField>
+            <Button fx:id="search_id" mnemonicParsing="false" onAction="#Clicked_search" prefHeight="26.0" prefWidth="74.0" text="Search">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+            <Button fx:id="clear_id" mnemonicParsing="false" onAction="#Clicked_clean" prefHeight="26.0" prefWidth="67.0" text="Clear" />
+         </children>
+      </HBox>
+      <Pane prefHeight="243.0" prefWidth="600.0">
+         <children>
+            <Polygon layoutX="522.0" layoutY="132.0" points="-522.0, 155.0, 78.0, 155.0, 78.0, -138.0" stroke="WHITE" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color green="0.5166666507720947" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Polygon>
+            <Polygon layoutX="70.0" layoutY="110.0" points="-70.0, 177.0, 537.5, -116.0, -70.0, -110.0" stroke="WHITE" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color green="0.5166666507720947" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Polygon>
+            <ListView fx:id="result_area" layoutX="80.0" layoutY="14.0" opacity="0.0" prefHeight="221.0" prefWidth="439.0" />
+         </children></Pane>
+   </children>
+</VBox>

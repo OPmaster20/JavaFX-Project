@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.book_select">
+  <tabs>
+    <Tab fx:id="tab_select" text="Select book">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <CubicCurve controlX1="30.5" controlX2="-104.5" controlY1="-65.5" controlY2="57.5" endX="124.0" endY="81.5" layoutX="476.0" layoutY="14.0" startX="-476.0" stroke="WHITE">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color green="0.5333333611488342" blue="1.0" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </CubicCurve>
+                  <Pane layoutX="14.0" layoutY="14.0" prefHeight="344.0" prefWidth="570.0">
+                     <children>
+                        <CubicCurve controlX1="66.3804931640625" controlX2="-96.86917114257812" controlY1="125.55615234375" controlY2="125.55615234375" endX="81.83612060546875" endY="-13.544158935546875" layoutX="485.0" layoutY="219.0" startX="-490.98675537109375" startY="125.55615234375" stroke="WHITE">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="0.2945368171021378">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.9342105388641357" green="0.46710526943206787" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </CubicCurve>
+                        <TreeTableView layoutX="14.0" layoutY="14.0" prefHeight="320.0" prefWidth="427.0">
+                          <columns>
+                            <TreeTableColumn fx:id="bt" prefWidth="110.0" text="Book type" />
+                            <TreeTableColumn fx:id="bn" prefWidth="118.0" text="Book name" />
+                              <TreeTableColumn fx:id="ba" prefWidth="114.60491943359375" text="Book anthor" />
+                              <TreeTableColumn fx:id="book_status" prefWidth="75.0" text="Status" />
+                          </columns>
+                        </TreeTableView>
+                        <Button fx:id="but_next" layoutX="450.0" layoutY="14.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="107.0" text="Next">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="but_back" layoutX="451.0" layoutY="65.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="106.0" text="Back" textAlignment="CENTER">
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="0.2945368171021378">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Button>
+                        <Button fx:id="but_reload" layoutX="452.0" layoutY="110.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="106.0" text="Reload">
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="0.3800475059382423">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Button>
+                     </children>
+                  </Pane>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab fx:id="tab_infor" disable="true" text="Book infor">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Pane fx:id="but_return" layoutX="11.0" layoutY="11.0" prefHeight="347.0" prefWidth="576.0">
+                     <children>
+                        <CubicCurve controlX1="392.0" controlX2="392.0" controlY1="25.0" controlY2="15.89642333984375" endX="392.0" endY="-322.0" layoutX="184.0" layoutY="322.0" opacity="0.02" startX="-185.05479431152344" startY="-322.0" stroke="WHITE">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="0.2945368171021378">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.8661205768585205" green="0.11999999731779099" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </CubicCurve>
+                        <CubicCurve controlX1="-168.0888214111328" controlX2="-168.0888214111328" controlY1="-253.19464111328125" controlY2="102.28396606445312" endX="-168.0888214111328" endY="-163.35902404785156" layoutX="168.0" layoutY="253.0" opacity="0.08" startX="186.42379760742188" startY="-43.57818603515625" stroke="WHITE">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="0.2945368171021378">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.8661205768585205" green="0.11999999731779099" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </CubicCurve>
+                        <TextArea fx:id="book_intro" editable="false" layoutX="178.0" layoutY="12.0" prefHeight="179.0" prefWidth="320.0" text="Book Introduction" />
+                        <ImageView fx:id="book_img" fitHeight="178.0" fitWidth="133.0" layoutX="21.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button fx:id="but_borrow" layoutX="177.0" layoutY="210.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="139.0" text="Confirm borrowing" textAlignment="CENTER">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="337.0" layoutY="210.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="157.0" text="Confirm return" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

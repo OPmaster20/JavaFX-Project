@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.user_register">
+  <tabs>
+    <Tab fx:id="tab" text="User registration">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Polygon fill="DODGERBLUE" layoutX="64.0" layoutY="322.0" points="413.0, -322.0, 536.0, 47.0, 536.0, -322.0" strokeType="INSIDE" />
+                  <Ellipse fill="DODGERBLUE" layoutX="300.0" layoutY="169.0" radiusX="307.0" radiusY="207.0" strokeType="INSIDE" />
+                  <GridPane layoutX="174.0" layoutY="137.0" prefHeight="127.0" prefWidth="277.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="112.0" minWidth="10.0" prefWidth="60.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="140.0" minWidth="10.0" prefWidth="140.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="36.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="60.0" minHeight="1.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="45.0" minHeight="7.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Username" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label text="Password" textFill="WHITE" GridPane.rowIndex="1" />
+                        <Label text="Password Confirm" textFill="WHITE" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Italic" size="13.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="register_password" prefHeight="25.0" prefWidth="160.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <PasswordField fx:id="register_password_confirm" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="register_username" GridPane.columnIndex="1" />
+                        <Button fx:id="apply_but" mnemonicParsing="false" onAction="#apply_function" prefHeight="25.0" prefWidth="106.0" text="Apply" textAlignment="CENTER" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="cancel_but" mnemonicParsing="false" onAction="#cancel_function" prefHeight="25.0" prefWidth="87.0" text="Cancel" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </GridPane>
+                  <Polygon fill="DODGERBLUE" layoutX="64.0" layoutY="117.0" points="-64.0, -117.0, -64.0, 252.0, 63.0, -117.0" strokeType="INSIDE" />
+                  <Line endX="211.0" fill="#fcfcfc" layoutX="275.0" layoutY="281.0" startX="-100.0" stroke="WHITE" />
+                  <ProgressIndicator fx:id="probar" layoutX="274.0" layoutY="302.0" opacity="0.0" />
+                  <TitledPane animated="false" collapsible="false" layoutX="174.0" layoutY="29.0" prefHeight="95.0" prefWidth="253.0" text="Select">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="46.0" prefWidth="213.0">
+                           <children>
+                              <ChoiceBox fx:id="register_types" layoutX="51.0" layoutY="23.0" onMouseClicked="#Update_clicked" prefWidth="150.0" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </TitledPane>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
